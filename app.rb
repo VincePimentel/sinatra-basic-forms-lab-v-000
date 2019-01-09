@@ -10,7 +10,7 @@ class App < Sinatra::Base
   end
 
   post "/puppy" do
-    raise params.inspect
+    #raise params.inspect
     puppy = Puppy.new(params)
     @name = puppy.name
     @breed = puppy.breed
